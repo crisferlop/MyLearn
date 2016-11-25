@@ -63,14 +63,14 @@
 
             <div class="form-line">
                 <label for="languages">Idiomas: </label>
-                <input id="languages" type="text" max="50" placeholder="Ingrese los idiomas que habla. ej español, ingles..." class="form-control" />
+                <input id="languages" type="text" max="50" ng-model="student.Idiomas" placeholder="Ingrese los idiomas que habla. ej español, ingles..." class="form-control" />
             </div>
 
             <div class="form-line">
                 <label for="repository">Repositorio de Trabajo: </label>
-                <input id="repository" type="url" max="100" placeholder="Ingrese su repositorio de trabajo. ej git, bitbucket..." class="form-control" />
+                <input id="repository" ng-model="student.URL_repositorio" type="url" max="100" placeholder="Ingrese su repositorio de trabajo. ej git, bitbucket..." class="form-control" />
             </div>
-            <button type="submit" class="btn btn-info my-learn-btn primary-color center-block" style="width:200px;">Registrar</button>
+            <button type="submit" ng-click="register()" class="btn btn-info my-learn-btn primary-color center-block" style="width:200px;">Registrar</button>
         </form>
     </div>
 </div>

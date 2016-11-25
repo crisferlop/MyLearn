@@ -5,7 +5,9 @@
     $scope.student.UserName = $scope.user.email;
     $scope.student.Nombre = $scope.user.fistname + ' ' + $scope.user.lastname;
 
+    $scope.register = function () {
 
+    }
 
 
 });
