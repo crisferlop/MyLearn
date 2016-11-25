@@ -6,7 +6,7 @@
     this.IdUniversidad = null,
     this.Nombre = '',
     this.FechaNacimiento = new Date(),
-    this.Telefono = 22381313,
+    this.Telefono = '',
     this.URL_foto = '',
     this.IdPais = null,
     this.Email= '',

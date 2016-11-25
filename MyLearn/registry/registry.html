@@ -20,7 +20,9 @@
             </div>
             <div class="form-line">
                 <label for="country">Seleccione su país: </label>
-                <select id="country" ng-model="student.IdPais" class="form-control" />
+                <select id="country" ng-model="student.IdPais" class="form-control">
+                    <option ng-repeat="country in countries" value="{{country.Id}}">{{country.Nombre}}</option>
+                </select>
             </div>
             <div class="form-line">
                 <label for="university">Seleccione su universidad: </label>
