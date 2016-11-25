@@ -1,0 +1,56 @@
+﻿
+<div class="data-container">
+    <div class="custom-tittles-background">
+        <h1 class="custom-tittles">Subasta: {{auction.Name}}</h1>
+    </div>
+    <div class="data-contain">
+
+        <div class="wally">
+
+
+            <div ng-hide="auction.Auctioned" class="topic">
+                <form>
+                    <div class="form-inline">
+                        <div class="form-group">
+                            <label for="pago">Monto de pago:</label>
+                            <input type="number" class="form-control" id="pago" min="1">
+                        </div>
+                        <div class="form-group">
+                            <label for="weeks">Semanas de trabajo:</label>
+                            <input type="number" class="form-control" id="weeks" min="1">
+                        </div>
+                    </div>
+                    <br>
+                    Comentario (opcional)
+                    <textarea class="form-control center-block"></textarea>
+                    <br>
+                    <div class="clearfix">
+                        <a href="#" class="btn btn-info my-learn-btn primary-color pull-right" style="width: 80px;">Subastar</a>
+                    </div>
+                </form>
+
+
+            </div>
+
+            <div class="scrollable" style="max-height:600px">
+
+                <div ng-repeat="AuctionResponse in auction.AuctionResponses" class="topic">
+                    <div class="row">
+                        <img class="comentary-avatar"></img>
+                        <div class="comentary">
+                            <div class="topic-contain">
+                                <h4 style="margin:0px">
+                                    {{AuctionResponse.UserName}}</h3>
+                                    {{AuctionResponse.Comentary}}
+                                    <br>
+                                    <b>Monto cobrado: </b> {{AuctionResponse.Payment}}, <b>Semanas de trabajo: </b> {{AuctionResponse.WorkWeeks}}.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</div>

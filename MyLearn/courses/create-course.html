@@ -1,0 +1,154 @@
+<div>
+
+    <form>
+        <div class="data-container">
+            <div class="custom-tittles-background">
+                <h1 class="custom-tittles">Detalles del curso</h1>
+            </div>
+            <div class="data-contain">
+                <div class="form-group">
+                    <label for="name">Nombre del curso:</label>
+                    <input type="text" ng-model="course.Name" class="form-control" id="name">
+                </div>
+                <div class="clearfix">
+                    <div class="form-line">
+                        <div class="form-group">
+                            <label for="name">Nota minima del curso:</label>
+                            <input type="number" ng-model="course.MinimunScore" class="form-control" id="name" min="1">
+                        </div>
+                    </div>
+                </div>
+                <div class="clearfix">
+                    <div class="form-line">
+                        <div class="form-group">
+                            <label for="name">Horario de consulta:</label>
+                            <input type="text" ng-model="course.AppointmentTime" class="form-control" id="name" max="15">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="clearfix">
+                    <div class="form-line">
+                        <div class="form-group">
+                            <label for="name">Periodo de inicio del curso:</label>
+                            <input type="date" ng-model="course.CourseBeginDate" class="form-control" id="name" min="1">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="clearfix">
+                    <div class="form-line">
+                        <div class="form-group">
+                            <label for="name">Periodo de finalizacion del curso:</label>
+                            <input type="date" ng-model="course.CourseEndDate" class="form-control" id="name" min="1">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+
+                <hr>
+
+        <div class="data-container">
+            <div class="custom-tittles-background">
+                <h1 class="custom-tittles">Batch del curso</h1>
+            </div>
+            <div class="row data-contain" style="margin:0px">
+                <div class="col-sm-4">
+
+                    <div class="form-group">
+                        <label for="name">Nombre del batch:</label>
+                        <input ng-model="batchInProgress.Name" type="text" class="form-control" id="name">
+                    </div>
+                    <div class="form-group">
+                        <label for="name">Descripcion del batch:</label>
+                        <input ng-model="batchInProgress.BatchDescription" type="text" class="form-control" id="name">
+                    </div>
+                    <div class="clearfix">
+                        <div class="form-inline">
+                            <div class="form-group">
+                                <label for="name">Nota del batch:</label>
+                                <input ng-model="batchInProgress.Value" type="number" class="form-control" id="name" min="1">
+                            </div>
+                        </div>
+                        <br>
+
+
+                        <div class="clearfix">
+                            <div class="form-inline">
+                                <div class="form-group">
+                                    <label for="name">Seleccione la imagen del batch:</label>
+                                    <input ng-model="batchInProgress.BatchPhoto" type="image" class="form-control" id="img">
+                                </div>
+                            </div>
+                            <a ng-click="addBatch()" class="btn btn-info my-learn-btn primary-color" style="width:200px;">Crear batch</a>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="col-sm-8">
+
+
+                    <div class="table-responsive">
+
+                        <table class="data-contain">
+                            <thead>
+                                <tr class="row third-color">
+                                    <th class="col-sm-4">
+                                        <h3 class="forth-color text-center">Imagen del batch</h3>
+                                    </th>
+                                    <th class="col-sm-4">
+                                        <h3 class="forth-color text-center">Descripcion</h3>
+                                    </th>
+                                    <th class="col-sm-4">
+                                        <h3 class="forth-color text-center">Valor porcentual</h3>
+                                    </th>
+                                    <th class="col-sm-4">
+                                        <h3 class="forth-color text-center">Remover</h3>
+                                    </th>
+                                </tr>
+
+                            </thead>
+                            <tbody>
+                                <tr ng-repeat="batch in course.BatchList" class="row primary-color">
+                                    <th class="col-sm-4">
+                                        <h4 class="forth-color text-center">{{batch.BatchPhoto}}</h4>
+                                    </th>
+                                    <th class="col-sm-4">
+                                        <h4 class="forth-color text-center">{{batch.BatchDescription}}</h4>
+                                    </th>
+                                    <th class="col-sm-4">
+                                        <h4 class="forth-color text-center">{{batch.Value}}</h4>
+                                    </th>
+                                    <th class="col-sm-4">
+                                        <h4 class="forth-color text-center"><span ng-click="removeBatch($index)" class="glyphicon glyphicon-remove forth-color center-block"></span></h4>
+                                    </th>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                </div>
+            </div>
+
+
+            </div>
+
+
+
+
+
+            <br>
+            <hr>
+            <br>
+
+
+            <a href="#" class="btn btn-info my-learn-btn primary-color center-block">Crear curso</a>
+
+            <br>
+            <hr>
+            <br>
+
+</form>
+</div>

@@ -1,0 +1,374 @@
+﻿
+
+
+
+/*
+.btn>.btn-primary,.btn-info,.btn-danger>.my-learn-btn:disabled{
+	background-color: #DDDDDD;
+	color: #ccc;
+}
+*/
+
+
+/*
+······································································································································
+General style
+······································································································································
+*/
+.custom-container{
+	background-color: #1FACDA;
+}
+
+.primary-color{
+	background-color: #1BA0CB;
+}
+.primary-color:hover{
+	background-color: #3DC2ED;
+}
+
+.secondary-color{
+	background-color: #37C8F7;
+}
+.secondary-color:hover{
+	background-color: #3BE5CF;
+}
+
+
+.third-color{
+	background-color: #00769C;
+}
+.third-color:hover{
+	background-color: #00769C;
+}
+
+
+
+.forth-color{
+	color: #F0EFEC;
+}
+.forth-color:hover{
+	color: #F0EFEC;
+}
+
+.warning-color{
+	background-color: #FF4444;
+	border-color: #FF4444;
+}
+.warning-color:hover{
+	background-color: #FF4444;
+	border-color: #FF4444;
+}
+
+
+
+/*
+······································································································································
+Header style
+······································································································································
+*/
+
+
+
+/*
+······································································································································
+Nav style
+······································································································································
+*/
+
+
+
+/*
+······································································································································
+Footer style
+······································································································································
+*/
+
+
+
+
+.navbar-default .navbar-nav>li>a{
+	color: #FFFFFF;
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.open>a{
+	color: #FFFFFF;
+	background-color: #1BA0CB;
+	background-image: none;
+}
+.navbar-nav>li.active{
+	color: #FFFFFF;
+	background-color: #1BA0CB;
+}
+
+.navbar-default .navbar-nav>.active>a:hover{
+	color: #FFFFFF;
+	background-color: #0A89BA;
+}
+
+
+.navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand{
+	color: #FFFFFF;
+}
+
+}
+
+
+
+/*
+    Se setea el color de la barra de navegacion
+    */
+    .navbar-default {
+    	background-color: #1BA0CB;
+    	border-color:#1BA0CB;
+    }
+
+
+/*
+    Se setea el color del boton de colapso
+    */
+    .navbar-default > .navbar-toggle {
+    	background-color: #1BA0CB;
+    	border-color: #1BA0CB;
+    }
+
+/*
+    Se setea el color del boton de colapso
+    */
+    .navbar-default .navbar-toggle:enabled {
+    	background-color: #1BA0CB;
+    	border-color: #F0EFEC;
+    }
+
+
+    .navbar-default .navbar-toggle .icon-bar{
+    	background-color: #F0EFEC;
+    }
+
+
+/*
+    El color de las letras de los hipervinculos de la barra de navegación se setean a un color mas
+    claro
+    */
+    .navbar-default,.navbar-default .navbar-nav > li > a{
+    	color: #F0EFEC;
+    }
+
+
+/*
+    Se setea el color del boton de colapso cuando el puntero del mouse está sobre este
+    */
+    .navbar-default .navbar-toggle:hover {
+    	background-color: #1BA0CB;
+    	border-color: #F0EFEC;
+    }
+
+/*
+    Se setea el color del boton de colapso despues de ser oprimido
+    */
+    .navbar-default .navbar-toggle::after {
+    	background-color: #1BA0CB;
+    	border-color: #1BA0CB;
+    }
+
+
+
+/**
+    Define de un color claro el hiperenlace principal de la pagina
+    */
+    .navbar .navbar-brand {
+    	color: #F0EFEC;
+    }
+
+
+
+    .navbar-brand {
+    	padding: 13px 13px;
+    }
+
+
+/*
+    Setea el color del borde  boton de colapso de la barra de navegacion
+    */
+    .navbar-default .navbar-collapse, .navbar-default .navbar-form{
+    	border-color: #1BA0CB;
+    }
+
+
+
+/*
+    Animacion de color de item de la barra de navegacion
+    */
+    .nav-item {
+    	transition: background-color 0.5s;
+    }
+
+/*
+    Cuando el cursor esta sobre un elemento de la barra de navegación cambia de color dicho elemento
+    */
+    .nav-item:hover {
+    	background-color:#1BA0CB;
+    }
+
+
+/**
+    Color de elemento de barra de navegación seteado a color rojo oscuro
+    */
+    .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus{
+    	background-color:#1BA0CB;
+    }
+
+
+/*
+······································································································································
+Body style
+······································································································································
+*/
+
+
+.data-container{
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.data-container>.custom-tittles-background{
+	background-color: #1FACDA;
+	width: 100%;
+	min-height: 36px;
+}
+
+.data-container>.custom-tittles-background>.custom-tittles{
+	color: #fff;
+	padding: 10px;
+	margin: 0px;
+}
+
+.data-container>.data-contain{
+	background-color: #F0EFEC;
+	width: 100%;
+	min-height: 50px;
+	padding: 10px;
+}
+
+.data-container>.data-contain>.form-group>.form-line{
+    margin-bottom:10px;
+}
+
+.btn>.btn-primary,.btn-info,.btn-danger>.my-learn-btn{
+	background-image: none;
+	border-radius: 0px;
+}
+
+.form-control{
+	border-radius: 0px;
+}
+
+
+.wally{
+	background-color: rgba(30,30,30,0.3);
+
+}
+.wally>.scrollable{
+	overflow-y: scroll;
+}
+.wally>.scrollable>*:first-child{
+	padding-top: 10px;
+}
+
+.topic{
+	background-color: #F0EFEC;
+	border-style:solid none solid none;
+	border-color: rgba(255,255,255,0.7);
+	border-width: 1px;
+	margin: 0 auto;
+	margin-bottom: 1px;
+
+}
+
+.topic:first-child{
+	border-style:none none solid none;
+}
+
+.topic > *{
+	width: 98%;
+	position: relative;
+	margin: 0 auto;
+	margin-bottom: 7px;
+	margin-top: 7px;
+
+}
+
+
+
+
+.comentary-avatar,.topic-contain{
+	content: " ";
+	display: table;
+}
+
+.comentary-avatar{
+	width: 64px;
+	height: 64px;
+	float: left;
+	clear: both;
+	margin-right: 5px;
+}
+
+.comentary{
+	margin-bottom: 15px;
+}
+
+
+.response{
+	margin-left: 64px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.topic-contain{
+}
+
+
+
+tr.row.primary-color{
+    border-spacing:5px;
+    border-color: #F0EFEC;
+    border-collapse: collapse;
+    border-style: solid none solid none;
+}
+
+
+.mylearn-horizontal-line{
+	line-height: normal;
+	border-style: inset;
+	border-width: 1px;
+	border-color: #1FACDA;
+
+}
+
+.mylearn-course-jobs-list-containter{
+	/*height:300px;*/
+	max-height:300px;
+	overflow-y:auto;
+}
+
+
+.login-form{
+	min-height: 200px;
+	vertical-align: middle;
+}
+
+.centerer{
+	height: 20%;
+}
+
+.data-contain > .frame{
+	margin-left:0px;margin-right:0px;width:98%;
+}
+
+.technologies >.technology{
+	float: left; padding:3px;
+}
+
+.technologies >.technology:last-child {
+	float: none; padding:3px;
+}

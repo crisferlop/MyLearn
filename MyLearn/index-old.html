@@ -1,0 +1,87 @@
+﻿
+
+<!DOCTYPE html>
+<html lang="en" ng-app="myLearn" class="no-js">
+<head>
+    <base href="/">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="google-signin-client_id" content="940844474251-h6b7a7481hc9hofu19big91ug8l94ru9.apps.googleusercontent.com" />
+    <title>MyLearn</title>
+    <meta name="description" content="Una plataforma para la interaccion entre Estudiantes, Profesores y Empleadores">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+
+
+    <link rel="stylesheet" href="Content/style.css">
+
+
+</head>
+<body >
+
+    <nav class="navbar navbar-default">
+        <div class="container-fluid custom-container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span clasgts="icon-bar"></span>
+                </button>
+                <a href="#" class="pull-left"><img height="50" width="50" src="../res/logo.png"></a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+                    <li><a href="#">Ayuda</a></li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+
+
+    <div class="centerer"></div>
+    <div class="container">
+        <div ng-view></div>
+
+    </div>
+
+
+    <div>MyLearn version: <span app-version></span></div>
+
+
+
+    <script src="Scripts/jquery-3.1.1.min.js"></script>
+    <script src="Scripts/angular.js"></script>
+    <script src="Scripts/angular-route.js"></script>
+    <script src="Scripts/angular-cookies.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+
+    <script src="login/login.js"></script>
+    <script src="login/AuthService.js"></script>
+    <script src="profile/profile.js"></script>
+
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <script src="Scripts/oauth.js"></script>
+
+    <script src="components/version/version.js"></script>
+    <script src="components/version/version-directive.js"></script>
+    <script src="components/version/interpolate-filter.js"></script>
+
+    <script src="app.js"></script>
+    <script src="Scripts/Custom-scripts/Profile.js"></script>
+    <script src="Scripts/Custom-scripts/CreateCourseController.js"></script>
+
+</body>
+</html>

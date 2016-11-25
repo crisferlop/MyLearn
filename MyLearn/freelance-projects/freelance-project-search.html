@@ -1,0 +1,61 @@
+﻿
+<form>
+    <div>
+        <div class="form-group">
+            <label for="name">Nombre del proyecto:</label>
+            <input type="text" class="form-control" id="name">
+        </div>
+        <div class="technologies">
+            <div ng-repeat="technology in project.Technologies" class="technology"><a href=""><span class="glyphicon glyphicon-remove"></span></a> {{technology.Name}} {{$last ? '' : ', '}} </div>
+        </div>
+    </div>
+    <div class="clearfix">
+        <div class="form-inline">
+            <label for="technologies">Nombre de la tecnologia:</label>
+            <select class="form-control" name="" id="technologies" style="width: 150px;">
+                <option value="volvo">Volvo</option>
+                <option value="saab">Saab</option>
+                <option value="vw">VW</option>
+                <option value="audi" selected>Audi</option>
+            </select>
+            <a href="#" class="btn btn-info my-learn-btn primary-color"><span class="glyphicon glyphicon-plus"></span> Agregar</a>
+        </div>
+
+        <a href="#" class="btn btn-info my-learn-btn primary-color pull-right" style="width: 80px;">Buscar</a>
+    </div>
+</form>
+
+<div class="data-contain center-block">
+    <div class="data-container">
+        <div class="custom-tittles-background">
+            <h1 class="custom-tittles">Resultados de busqueda</h1>
+        </div>
+        <div class="data-contain">
+            <ul class="list-group mylearn-course-jobs-list-containter" style="max-height:500px;height:500px;background-color:#FFFFFF">
+                <li ng-repeat="project in projectResultList" class="list-group-item">
+                    <div class="row">
+                        <div class="clearfix">
+                            <div class="col-sm-4">
+                                <h4>{{project.Name}}</h4>
+                                Nombre de Contacto: {{project.ContactName}}
+                                Tecnologias: <span ng-repeat="technology in project.Technologies">{{technology.Name}}{{$last ? '' : ', '}} </span> 
+                            </div>
+                            <div class="col-sm-4 pull-right">
+                                <div class="pull-right">
+                                    <a href="" class="btn btn-info my-learn-btn primary-color">Ir a subasta</a>
+                                    <a href="" class="btn btn-info my-learn-btn primary-color">Ver detalles</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+
+
+    </div>
+
+
+</div>
+<br>

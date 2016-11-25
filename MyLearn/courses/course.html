@@ -1,0 +1,78 @@
+﻿<div class="data-container">
+    <div class="custom-tittles-background">
+        <h1 class="custom-tittles">Curso: {{course.Name}}</h1>
+    </div>
+    <div class="data-contain">
+        Nombre del profesor: {{course.TeacherName}}<br>
+        Horario de cosulta: {{course.AppointmentTime}} <br>
+        Puntaje de minimo de aprobacion: {{course.MinimunScore}}
+
+    </div>
+</div>
+
+<hr>
+
+
+<div class="data-container">
+    <div class="custom-tittles-background">
+        <h1 class="custom-tittles">Espeficicaciones del proyecto</h1>
+    </div>
+    <div class="data-contain">
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
+        <br>
+        <a href="#" class="btn btn-info my-learn-btn primary-color">Ver documento adjunto</a>
+    </div>
+</div>
+
+
+<hr>
+
+<div class="table-responsive">
+
+    <table class="data-contain">
+        <thead>
+            <tr class="row third-color">
+                <th class="col-sm-4">
+                    <h1 class="forth-color text-center">Imagen del batch</h1>
+                </th>
+                <th class="col-sm-4">
+                    <h1 class="forth-color text-center">Descripcion</h1>
+                </th>
+                <th class="col-sm-4">
+                    <h1 class="forth-color text-center">Valor porcentual</h1>
+                </th>
+                <th class="col-sm-4">
+                    <h1 class="forth-color text-center">Estado</h1>
+                </th>
+                <th class="col-sm-4">
+                    <h1 class="forth-color text-center">Alardear</h1>
+                </th>
+            </tr>
+
+        </thead>
+        <tbody>
+            <tr ng-repeat="batch in course.BatchList" class="row primary-color">
+                <th class="col-sm-4">
+                    <h3 class="forth-color text-center">{{batch.BatchPhoto}}</h3>
+                </th>
+                <th class="col-sm-4">
+                    <h3 class="forth-color text-center">{{batch.Name}} {{batch.BatchDescription}}</h3>
+                </th>
+                <th class="col-sm-4">
+                    <h3 class="forth-color text-center">{{batch.Value}}</h3>
+                </th>
+                <th class="col-sm-4">
+                    <h3 class="forth-color text-center">{{batch.State}}</h3>
+                </th>
+                <th class="col-sm-4">
+                    <h3 ng-show="batch.State==1" class="forth-color text-center"><span class="glyphicon glyphicon-check forth-color center-block"></span></h3>
+                </th>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<hr>
+
+
+<div ng-show="course.State==0" ng-include src="'../workarea/discusionarea.html'"></div>

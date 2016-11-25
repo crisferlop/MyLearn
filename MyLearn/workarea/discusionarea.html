@@ -1,0 +1,72 @@
+﻿
+    <div class="data-container" ng-controller="DiscusionAreaController">
+        <div class="custom-tittles-background">
+            <h1 class="custom-tittles">Discusión</h1>
+        </div>
+        <div class="data-contain">
+
+            <div class="wally">
+
+                <div class="topic">
+                    <textarea class="form-control center-block"></textarea>
+                    <div class="clearfix">
+                        <a href="">Adjuntar documento</a>
+                        <a href="#" class="btn btn-info my-learn-btn primary-color pull-right" style="width: 80px;">Publicar</a>
+                    </div>
+
+
+                </div>
+
+
+
+                <div ng-repeat="comment in commentaries" class="topic">
+                    <div class="row">
+                        <img class="comentary-avatar" ng-src="response.UserPhoto"/>
+                        <div class="comentary">
+                            <div class="topic-contain">
+                                <h3 style="margin-top:0px;margin-bottom:5px;">{{comment.Username}}</h3>
+                                {{comment.Commentary}}
+                                <div style="margin-top:5px;margin-bottom:0px;color:#888888;font-style:italic;"> 
+                                <a href="" class="btn btn-info my-learn-btn primary-color" ng-show="comment.AttachFile != undefined">Ver archivo adjunto</a>  
+                                {{comment.Date}}</div>
+                            </div>
+                        </div>
+
+                        <hr class="mylearn-horizontal-line primary-color">
+                        <div class="response">
+                            <div class="topic">
+                                <textarea class="form-control center-block"></textarea>
+                                <div class="clearfix">
+                                    <a href="" class="btn btn-info my-learn-btn primary-color">Adjuntar documento</a>
+                                    <a href="#" class="btn btn-info my-learn-btn primary-color pull-right" style="width: 80px;">Publicar</a>
+                                </div>
+                            </div>
+                            <hr class="mylearn-horizontal-line primary-color">
+                        </div>
+
+                        <div ng-repeat="response in comment.Responses" class="response">
+                            <img class="comentary-avatar" ng-src="response.UserPhoto"/>
+                                <div class="topic-contain">
+                                    <h3 style="margin-top:0px;margin-bottom:5px">{{response.Username}}</h3>
+                                    {{response.Commentary}}
+                                    <div style="margin-top:5px;margin-bottom:0px;color:#888888;font-style:italic;">
+                                        <a href="" class="btn btn-info my-learn-btn primary-color" ng-show="response.AttachFile != undefined">Ver archivo adjunto</a>
+                                        {{response.Date}}
+                                    </div>                                    
+                            </div >
+                            <hr class="mylearn-horizontal-line primary-color">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+    <br>
+    <hr>
+    <br>
+

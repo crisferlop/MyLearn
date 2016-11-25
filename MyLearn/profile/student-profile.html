@@ -1,0 +1,134 @@
+﻿<div class="data-container">
+    <div class="custom-tittles-background">
+        <h1 class="custom-tittles">Mis datos de perfil</h1>
+    </div>
+    <div class="data-contain">
+        <div class="row frame">
+            <div style="float:left"><img src="img/my-learn-logo.jpg" alt="" width="100px" height="100px"></div>
+            <div class="col-sm-6">
+                Nombre: {{profile.Name}}<br>
+                Correo electronico: {{profile.Email}}<br>
+                Telefono: {{profile.PhoneNumber}}<br>
+                País de residencia: {{profile.Country}}<br>
+                Ubicación: {{profile.Address}}<br>
+                Universidad: {{profile.University}}<br>
+            </div>
+        </div>
+        <br>
+        <a href="#" class="btn btn-info my-learn-btn primary-color">Ver mi hoja de vida</a>
+        <a href="#" class="btn btn-info my-learn-btn primary-color">Buscar un Proyecto</a>
+        <a href="#" class="btn btn-info my-learn-btn primary-color">Ver cursos de mi universidad</a>
+    </div>
+</div>
+
+<br>
+<hr>
+<br>
+
+<!-- Estadisticas del estudiante -->
+
+
+<div class="data-contain center-block">
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="data-container">
+                <div class="custom-tittles-background">
+                    <h1 class="custom-tittles">Estadisticas de mis cursos</h1>
+                </div>
+                <div class="data-contain">
+                    Promedio de calificaciones: {{coursesStatistics.CalificationsAverage}}<br>
+                    Promedio cursos aprobados: {{coursesStatistics.AverageApprovedCourses}}<br>
+                    Promedio de cursos reprobados: {{coursesStatistics.AverageFailedCourses}}<br>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-6">
+            <div class="data-container">
+                <div class="custom-tittles-background">
+                    <h1 class="custom-tittles">Estadisticas de mis proyectos</h1>
+                </div>
+                <div class="data-contain">
+                    Calificación promedio de proyectos: {{projectStatistics.AverageProjectRating}}<br>
+                    Cantidad de proyectos existosos: {{projectStatistics.NumberOfSuccessfulProjects}}<br>
+                    Cantidad de proyectos sin exito: {{projectStatistics.NumberOfUnsuccessfulProjects}}<br>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+
+<br>
+<hr>
+<br>
+
+<!-- Seccion de mis cursos y mis proyectos-->
+<div class="data-contain center-block">
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="data-container">
+                <div class="custom-tittles-background">
+                    <h1 class="custom-tittles">Mis Cursos</h1>
+                </div>
+                <div class="data-contain">
+                    <ul class="list-group mylearn-course-jobs-list-containter">
+                        <li ng-repeat="course in coursesProject" class="list-group-item">
+                            <div class="row">
+                                <div class="clearfix">
+                                    <div class="col-sm-6">
+                                        {{course.Name}}
+                                        <br>
+                                        Profesor: {{course.Contact}}
+                                    </div>
+                                    <div class="col-sm-4 pull-right"><a href="">{{course.Status}}</a></div>
+                                </div>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-6">
+            <div class="data-container">
+                <div class="custom-tittles-background">
+                    <h1 class="custom-tittles">Mis Proyectos</h1>
+                </div>
+                <div class="data-contain">
+                    <ul class="list-group mylearn-course-jobs-list-containter">
+                        <li ng-repeat="freelanceProject in freelanceProjects" class="list-group-item">
+                            <div class="row">
+                                <div class="clearfix">
+                                    <div class="col-sm-6">
+                                        {{freelanceProject.Name}}
+                                        <br>
+                                        Contacto: {{freelanceProject.Contact}}
+                                    </div>
+                                    <div class="col-sm-4 pull-right"><a href="">{{freelanceProject.Status}}</a></div>
+                                </div>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+</div>
+<br>
+<hr>
+<br>
+
+<a href="#" class="btn btn-info my-learn-btn warning-color center-block">Desactivar mi cuenta</a>
+
+<br>
+<hr>
+<br>

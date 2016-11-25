@@ -1,0 +1,23 @@
+﻿<div class="data-container">
+    <div class="custom-tittles-background">
+        <h1 class="custom-tittles">Nombre del Proyecto: {{project.Name}}</h1>
+    </div>
+    <div class="data-contain">
+        Nombre del Contacto: {{project.ContactName}}
+        <br>
+    </div>
+</div>
+
+
+<div class="data-container">
+    <div class="custom-tittles-background">
+        <h1 class="custom-tittles">Espeficicaciones del proyecto</h1>
+    </div>
+    <div class="data-contain">
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
+        <br>
+        <a href="#" class="btn btn-info my-learn-btn primary-color">Ver documento adjunto</a>
+    </div>
+</div>
+
+<div ng-show="project.State == 1" ng-include src="'../workarea/discusionarea.html'"></div>
