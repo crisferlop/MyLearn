@@ -1,0 +1,75 @@
+﻿
+
+
+<form class="form-group">
+    <h1>Información personal</h1>
+    <hr class="mylearn-horizontal-line primary-color">
+    <div class="form-line">
+        <label for="name">Nombre: </label>
+        <input max="30" id="name" ng-model="user.firstname" placeholder="Ingrese su nombre" class="form-control" />
+    </div>
+    <div class="form-line">
+        <label for="lastname">Apellido: </label>
+        <input max="30" id="lastname" ng-model="user.lastname" placeholder="Ingrese su primer apellido" class="form-control" />
+    </div>
+    <div class="form-line">
+        <label for="phone">Telefono: </label>
+        <input max="15" id="phone" ng-model="student.Telefono" type="tel" placeholder="Ingrese su número de telefono" class="form-control" />
+    </div>
+    <div class="form-line">
+        <label for="country">Seleccione su país: </label>
+        <select id="country" ng-model="student.IdPais" class="form-control">
+            <option ng-repeat="country in countries" value="{{country.Id}}">{{country.Nombre}}</option>
+        </select>
+    </div>
+
+
+    <h1>Información académica</h1>
+    <hr class="mylearn-horizontal-line primary-color">
+    <div class="form-line">
+        <label for="university">Seleccione su universidad: </label>
+        <select id="university" ng-model="student.IdUniversidad" class="form-control" />
+    </div>
+    <div class="form-line">
+        <label for="student-id">Carné de universidad: </label>
+        <input id="student-id" ng-model="student.Carne" class="form-control" max="15" placeholder="Ingrese el carné que le asignaron en su universidad" />
+    </div>
+    <div class="form-line">
+        <label for="technology">Tecnologías que maneja: </label>
+        <div class="input-group">
+            <select id="technology" class="form-control" style="margin-bottom:5px;" />
+            <span class="input-group-btn" style="top:-2px;">
+                <button class="btn btn-info my-learn-btn primary-color"><span class="glyphicon glyphicon-plus"></span>Agregar tecnología</button>
+            </span>
+
+        </div>
+        <ul class="list-group">
+            <li class="list-group-item">
+                <div class="row">
+                    <div class="col-sm-6">
+                        Technology
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="clearfix">
+                            <a class="pull-right"> <span class="glyphicon glyphicon-remove" style="color:#FF4444;"></span> </a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </li>
+        </ul>
+    </div>
+
+    <div class="form-line">
+        <label for="languages">Idiomas: </label>
+        <input id="languages" type="text" max="50" ng-model="student.Idiomas" placeholder="Ingrese los idiomas que habla. ej español, ingles..." class="form-control" />
+    </div>
+
+    <div class="form-line">
+        <label for="repository">Repositorio de Trabajo: </label>
+        <input id="repository" ng-model="student.URL_repositorio" type="url" max="100" placeholder="Ingrese su repositorio de trabajo. ej git, bitbucket..." class="form-control" />
+    </div>
+    <br />
+    <button type="submit" ng-click="register()" class="btn btn-info my-learn-btn primary-color center-block" style="width:200px;">Registrar</button>
+</form>

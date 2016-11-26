@@ -1,0 +1,39 @@
+﻿
+
+
+<form class="form-group">
+    <h1>Información personal</h1>
+    <hr class="mylearn-horizontal-line primary-color">
+    <div class="form-line">
+        <label for="name">Nombre de la empresa: </label>
+        <input max="30" id="name" ng-model="enterprise.Name" placeholder="Ingrese su nombre" class="form-control" />
+    </div>
+    <div class="form-line">
+        <label for="name">Nombre: </label>
+        <input max="30" id="name" ng-model="user.firstname" placeholder="Ingrese su nombre" class="form-control" />
+    </div>
+    <div class="form-line">
+        <label for="lastname">Apellido: </label>
+        <input max="30" id="lastname" ng-model="user.lastname" placeholder="Ingrese su primer apellido" class="form-control" />
+    </div>
+    <div class="form-line">
+        <label for="phone">Correo electronico: </label>
+        <input max="15" id="phone" ng-model="enterprise.Email" type="tel" placeholder="Ingrese su número de telefono" class="form-control" />
+    </div>
+    <div class="form-line">
+        <label for="phone">Telefono: </label>
+        <input max="15" id="phone" ng-model="enterprise.Telefono" type="tel" placeholder="Ingrese su número de telefono" class="form-control" />
+    </div>
+    <div class="form-line">
+        <label for="country">Seleccione su país: </label>
+        <select id="country" ng-model="enterprise.IdPais" class="form-control">
+            <option ng-repeat="country in countries" value="{{country.Id}}">{{country.Nombre}}</option>
+        </select>
+    </div>
+    <div class="form-line">
+        <label for="repository">Link a la página de su empresa: </label>
+        <input id="repository" ng-model="enterprise.URL_empresa" type="url" max="100" placeholder="Ingrese su repositorio de trabajo. ej git, bitbucket..." class="form-control" />
+    </div>
+    <br />
+    <button type="submit" ng-click="register()" class="btn btn-info my-learn-btn primary-color center-block" style="width:200px;">Registrar</button>
+</form>

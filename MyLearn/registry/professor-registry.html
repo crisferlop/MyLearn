@@ -1,0 +1,35 @@
+﻿
+<form class="form-group">
+    <h1>Información personal</h1>
+    <hr class="mylearn-horizontal-line primary-color">
+    <div class="form-line">
+        <label for="name">Nombre: </label>
+        <input max="30" id="name" ng-model="user.firstname" placeholder="Ingrese su nombre" class="form-control" />
+    </div>
+    <div class="form-line">
+        <label for="lastname">Apellido: </label>
+        <input max="30" id="lastname" ng-model="user.lastname" placeholder="Ingrese su primer apellido" class="form-control" />
+    </div>
+    <div class="form-line">
+        <label for="phone">Telefono: </label>
+        <input max="15" id="phone" ng-model="teacher.Telefono" type="tel" placeholder="Ingrese su número de telefono" class="form-control" />
+    </div>
+    <div class="form-line">
+        <label for="country">Seleccione su país: </label>
+        <select id="country" ng-model="teacher.IdPais" class="form-control">
+            <option ng-repeat="country in countries" value="{{country.Id}}">{{country.Nombre}}</option>
+        </select>
+    </div>
+    <div class="form-line">
+        <label for="university">Seleccione su universidad: </label>
+        <select id="university" ng-model="teacher.IdUniversidad" class="form-control" />
+    </div>
+    <div class="form-line">
+        <label for="consultSchedule">Horario de consulta: </label>
+        <select id="consultSchedule" ng-model="teacher.HorarioConsulta" class="form-control" />
+    </div>
+
+
+    <br />
+    <button type="submit" ng-click="register()" class="btn btn-info my-learn-btn primary-color center-block" style="width:200px;">Registrar</button>
+</form>

@@ -372,3 +372,9 @@ tr.row.primary-color{
 .technologies >.technology:last-child {
 	float: none; padding:3px;
 }
+
+
+.btn-group > .btn .btn-info .my-learn-btn .third-color .active{
+    background-color: #1BA0CB;
+    
+}

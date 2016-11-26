@@ -1,5 +1,14 @@
 ﻿'use strict';
 
+$(".btn-group > a.btn .btn-info .my-learn-btn .third-color").on("click", function () {
+    console.log("tootgle");
+    $(this).addClass("primary-color");
+    $(this).addClass("primary-color");
+});
+
+$('.btn-group > a.btn .btn-info .my-learn-btn .third-color').removeClass('third-color')    // Remove any existing active classes
+$('.btn-group > a.btn .btn-info .my-learn-btn .third-color').eq(0).addClass('primary-color') // Add the class to the nth element
+
 angular.module('MyLearn', ['ngRoute', 'ngCookies', 'myLearn.version'])
     .config(config)
     .run(run);
